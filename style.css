@@ -31,51 +31,73 @@ li {
 
 a {
   text-decoration: none;
-  color: #4b7ff2;
+  position: relative;
 }
 
 /* ----- intro ----- */
 
-#intro {
+.intro {
   padding: 120px 100px;
   font-size: 2em;
   font-weight: 200;
 }
 
-#hand {
+.hand {
   margin-left: 10px;
   height: 50px;
   width: 50px;
 }
 
-#hand:hover {
+.hand:hover {
   animation: wave 2s linear infinite;
 }
 
 /* ----- links ----- */
 
-#links {
+.links {
   padding: 0 0 100px 100px;
   display: flex;
   justify-content: flex-start;
   font-size: 1.3em;
   font-weight: 600;
+}
+
+.link {
+  margin-right: 30px;
+}
+
+.blue {
   color: #4b7ff2;
 }
 
-#link {
-  margin-right: 30px;
-  color: #4b7ff2;
+.resume {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='29' height='35' viewport='0 0 100 100' style='fill:black;font-size:17px;'><text y='50%'>🇫🇷</text></svg>")
+      16 0,
+    auto;
+}
+
+.line:after {
+  content: "";
+  position: absolute;
+  background-color: #4b7ff2;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+}
+.line:hover:after {
+  width: 100%;
+  transition: 0.3s;
 }
 
 /* ----- about ----- */
 
-#about {
+.about {
   display: flex;
   padding: 50px 100px 50px 100px;
 }
 
-#title {
+.title {
   font-weight: 600;
   padding: 0 70px 0 0;
   flex: none;
@@ -85,14 +107,14 @@ a {
   text-align: right;
 }
 
-#content {
+.content {
   padding: 0;
   font-size: 1em;
 }
 
 /* ----- disclaimer ----- */
 
-#disclaimer {
+.disclaimer {
   padding: 0 0 120px 100px;
   font-weight: 600;
 }
@@ -105,34 +127,34 @@ a {
     margin: 0;
   }
 
-  #intro {
+  .intro {
     padding: 120px 20px;
     font-size: 1em;
   }
 
-  #links {
+  .links {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0;
   }
 
-  #link {
+  .link {
     padding: 10px 0;
   }
 
-  #about {
+  .about {
     padding: 20px 20px 20px 20px;
     justify-content: space-between;
     flex-direction: column;
   }
 
-  #title {
+  .title {
     padding: 0 0 20px 0;
     width: 100px;
     text-align: left;
   }
 
-  #disclaimer {
+  .disclaimer {
     padding: 20px;
     font-weight: 600;
   }
