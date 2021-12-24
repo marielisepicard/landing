@@ -127,15 +127,22 @@ a {
     margin: 0;
   }
 
+  .hand {
+    margin-left: 5px;
+    height: 25px;
+    width: 25px;
+  }
+
   .intro {
-    padding: 120px 20px;
+    padding: 20px 20px;
     font-size: 1em;
   }
 
   .links {
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0;
+    justify-content: flex-start;
+    padding: 0 20px;
+    font-size: 0.8em;
   }
 
   .link {
@@ -150,7 +157,6 @@ a {
 
   .title {
     padding: 0 0 20px 0;
-    width: 100px;
     text-align: left;
   }
 
