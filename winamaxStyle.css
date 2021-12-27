@@ -1,3 +1,26 @@
+.winamax {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #1f1f1f;
+}
+
+.content {
+  padding: 10px 300px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  word-spacing: 1px;
+}
+
+h2 {
+  font-weight: bold;
+  word-spacing: 1px;
+  color: rgb(165, 42, 42);
+  font-size: 1.5rem;
+  line-height: 30px;
+}
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;600;800&display=swap");
 
 * {
@@ -16,32 +39,23 @@ b {
 
 p {
   margin-top: 0;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.6;
   font-weight: 300;
 }
 
 li {
   list-style-type: "→ ";
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.6;
   font-weight: 300;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 
 a {
   text-decoration: none;
   position: relative;
 }
-
-h3 {
-  color: #b5121b;
-  margin: 0px;
-}
-
-/* 
-  color: #b5121b;
-} */
 
 /* ----- intro ----- */
 
@@ -57,15 +71,7 @@ h3 {
   width: 50px;
 }
 
-.logo-winamax {
-  margin-left: 0px;
-  height: 50px;
-  width: 50px;
-  margin-bottom: -10px;
-}
-
-.hand:hover,
-.logo-winamax:hover {
+.hand:hover {
   animation: wave 2s linear infinite;
 }
 
@@ -87,14 +93,10 @@ h3 {
   color: #4b7ff2;
 }
 
-.red {
-  color: #b5121b;
-}
-
 .line:after {
   content: "";
   position: absolute;
-  background-color: #b5121b;
+  background-color: #4b7ff2;
   height: 3px;
   width: 0;
   left: 0;
@@ -109,8 +111,6 @@ h3 {
 
 .about {
   display: flex;
-  /* flex-direction: column; */
-  flex-direction: row;
   padding: 50px 100px 50px 100px;
 }
 
@@ -119,8 +119,8 @@ h3 {
   padding: 0 70px 0 0;
   flex: none;
   width: 270px;
-  font-size: 1.7em;
-  color: #b5121b;
+  font-size: 1.3em;
+  color: #4b7ff2;
   text-align: right;
 }
 
@@ -134,14 +134,6 @@ h3 {
 .disclaimer {
   padding: 0 0 120px 100px;
   font-weight: 600;
-}
-
-/* ----- outro ----- */
-
-.outro {
-  padding: 10px 100px;
-  font-size: 1.4em;
-  font-weight: 200;
 }
 
 /* ----- responsiveness ----- */
