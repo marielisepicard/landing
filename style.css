@@ -94,7 +94,7 @@ h3 {
 .line:after {
   content: "";
   position: absolute;
-  background-color: #b5121b;
+  background-color: #4b7ff2;
   height: 3px;
   width: 0;
   left: 0;
@@ -120,7 +120,7 @@ h3 {
   flex: none;
   width: 270px;
   font-size: 1.7em;
-  color: #b5121b;
+  color: #4b7ff2;
   text-align: right;
 }
 
